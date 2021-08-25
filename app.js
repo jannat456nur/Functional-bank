@@ -24,21 +24,21 @@ document.getElementById('deposit-button').addEventListener('click', function () 
 });
 
 
-// document.getElementById('withdraw-button').addEventListener('click', function () {
-//     // console.log('sfgsdhf')
-//     const withdrawInput = document.getElementById('Withdraw-input');
-//     const withdrawInputText = withdrawInput.value;
-//     // console.log(withdrawInputText)
-//     const withdrawTotal = document.getElementById('withdraw-total');
-//     const withdrawTotalText = withdrawTotal.innerText;
-//     // console.log(withdrawTotalText)
-//     withdrawTotal.innerText = parseFloat(withdrawInputText) + parseFloat(withdrawTotalText);
-//     withdrawInput.value = '';
-//     //update diposit
+document.getElementById('withdraw-button').addEventListener('click', function () {
+    // console.log('sfgsdhf')
+    const withdrawInput = document.getElementById('Withdraw-input');
+    const withdrawInputText = withdrawInput.value;
+    // console.log(withdrawInputText)
+    const withdrawTotal = document.getElementById('withdraw-total');
+    const withdrawTotalText = withdrawTotal.innerText;
+    // console.log(withdrawTotalText)
+    withdrawTotal.innerText = parseFloat(withdrawInputText) + parseFloat(withdrawTotalText);
+    withdrawInput.value = '';
+    //update diposit
 
-//     const drawTotal = document.getElementById('balance-total');
-//     const previousWithdrawTotalText = drawTotal.innerText;
-//     const text = parseFloat(drawTotalText);
-//     drawTotal.innerText = parseFloat(withdrawInputText) - parseFloat(withdrawTotalText);
+    const drawTotal = document.getElementById('balance-total');
+    const drawTotalText = drawTotal.innerText;
+    const text = parseFloat(drawTotalText);
+    drawTotal.innerText = parseFloat(withdrawInputText) - text;
 
-// })
+})
